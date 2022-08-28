@@ -35,7 +35,9 @@ Inside the URLPopover a json-editor-form (https://github.com/json-editor/json-ed
 Also I wanted to find a more "lazy" way to have things like "repeatable objects" in gutenberg editor. 
 To do this with the standard react/gutenberg way you probably have to write much more code than just the approx. 300 lines used at moment. 
 
-`
+The main part consists of this simple json-schema which is compiled into a html-form by https://github.com/json-editor/json-editor.
+
+```
 	const schema = {
 	    title: 'Word replacement Animations', // hidden via CSS
 	    format: 'table', //categories, grid-strict, grid , table
@@ -100,7 +102,7 @@ To do this with the standard react/gutenberg way you probably have to write much
 	                        format: 'color',
 	                        default: '#FFFFFF',
 	                    },
-	                    linethrough: {
+	                    line_through: {
 	                        title: 'L-Through',
 	                        type: 'boolean',
 	                        format: 'checkbox',
@@ -121,7 +123,7 @@ To do this with the standard react/gutenberg way you probably have to write much
 	        },
 	    },
 	};
-`
+```
 
 Even if there is a react based implementation of jsonschema-form (https://github.com/rjsf-team/react-jsonschema-form), I choose to go with *json-editor* (https://github.com/json-editor/json-editor).
 I made some good experiences with it and also know that these *json-schema to html-form* softwares can be challenging. 
