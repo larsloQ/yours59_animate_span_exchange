@@ -18,6 +18,9 @@ For each exchanging Word / Span you can set:
 - Type of underline (solid, wavy, dashed)   
 - If the whole animation should get repeated
 
+To remove the effect, open the Popup and delete all additional words.
+
+
 ### Screenshot of interface in gutenberg editor
 
 ![screenshot of interface in gutenberg editor ](screenshot.png "screenshot of interface in gutenberg editor")
@@ -132,6 +135,8 @@ I made some good experiences with it and also know that these *json-schema to ht
 
 ## Known Issues
 
+When the exchanging words are the same, they are shown all at once. 
+
 The interface is not very "gutenberg/wordpress-like". But its working and produces the desired output.
 And the code is kind of lean :-)
 
@@ -140,7 +145,7 @@ There are still some browser-issues with text-decoration:underline (see https://
 Do not overuse this animation effect. The frontend-animations are simply done with `setTimeout` (and when repeated) `setInterval`. As we know these are not the most performant ways to animate things. But I think its ok for a couple of elements on the page.
 
 When you want the selected text-element to be a link, you have to set the link first, then the animation.
-
+This sometimes also leads to some strange issues in editor and frontend. I guess this is due to the 'aggressive' link-dialog (gutenberg).
 
 ## WP Plugin Info
 
@@ -168,3 +173,5 @@ When you want the selected text-element to be a link, you have to set the link f
 ## TODO
 
 - better styling of json-schema form inside Gutenberg Popup
+- When the words added are the same, they are shown all at once. 
+- Make this work better when used inside link elements.
