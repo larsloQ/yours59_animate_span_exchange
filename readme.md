@@ -126,7 +126,9 @@ The main part consists of this simple json-schema which is compiled into a html-
 ```
 
 Even if there is a react based implementation of jsonschema-form (https://github.com/rjsf-team/react-jsonschema-form), I choose to go with *json-editor* (https://github.com/json-editor/json-editor).
-I made some good experiences with it and also know that these *json-schema to html-form* softwares can be challenging. 
+I made some good experiences with it and also know that these *json-schema to html-form* softwares can be challenging (see the 'Issues' on the related repos on github) and also the comments above.
+
+
 
 ## Known Issues
 
@@ -158,7 +160,7 @@ When you want the selected text-element to be a link, you have to set the link f
 
 1. Clone / Download and move files to `/wp-content/plugins/yours59_animate_span_exchange` directory
 2. Activate the plugin via the 'Plugins' screen in WordPress
-3. You should see "Animate Word(s)" in RichTextToolbarButtons (see screenshot below)
+3. You should see "Animate Word(s)" in RichTextToolbarButtons (see screenshot below (1))
 
 ![screenshot of interface in gutenberg editor 2 ](screenshot2.png "screenshot of interface in gutenberg editor 2")
 
