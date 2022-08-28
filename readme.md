@@ -109,8 +109,8 @@ The main part consists of this simple json-schema which is compiled into a html-
 	                    },
 	                    line_type: {
 	                        title: 'L-Type',
-							enum: [ "solid", "wavy", "dashed"], // shows empty option at begin
-							type: "string",
+	                        enum: [ "solid", "wavy", "dashed"], // shows empty option at begin
+	                        type: "string",
 	                    },
 	                },
 	            },
